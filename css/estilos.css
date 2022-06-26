@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Roboto:wght@500&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Clases especiales*/
+
+.borde {
+    border: 1px solid gray;
+}
+
+.titulo {
+    width: 100%;
+    height: 50px;
+    /* padding: 10px; */
+    padding: 52px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: 'Patrick Hand', sans-serif;
+    color: #fff;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+/*Contenedor para pantallas grandes*/
+
+.contenedor {
+    width: 99%;
+    max-width: 1280px;
+    margin: auto;
+}
+
+body {
+    background-image: url('../img/fondo-pagina.jpg');
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/*Navegador*/
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    max-width: 1280px;
+}
+
+.logo {
+    width: 20%;
+    height: 100%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+}
+
+.logo img {
+    /*width: auto;*/
+    /*height: 100%; de los 50px*/
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.navegacion {
+    width: 65%;
+    height: 100%;
+    float: left;
+}
+
+.ingreso {
+    width: 15%;
+    height: 100%;
+    float: left;
+}
+
+
+/*niveles de navegación*/
+
+
+/*nivel 0*/
+
+nav ul {
+    list-style: none;
+    text-align: right;
+}
+
+nav ul li {
+    width: 130px;
+    background: rgba(5, 5, 5, 0.5);
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav .navegacion>ul>li {
+    display: inline-block;
+}
+
+nav .ingreso ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 2px;
+    text-align: center;
+    border-bottom: 2px solid #fff;
+}
+
+nav ul li a:hover {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgb(255, 171, 119));
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid rgb(246, 94, 0);
+}
+
+
+/*nivel 1 -primer despliegue*/
+
+nav li ul {
+    position: absolute;
+    display: none;
+    /*se ocultan los elementos del nivel 1*/
+}
+
+nav .ingreso li ul {
+    width: 14%;
+}
+
+nav li ul li {
+    position: relative;
+}
+
+
+/*nivel 2 -despligues laterales+*/
+
+nav li ul li ul {
+    left: 130px;
+    top: 2px;
+}
+
+
+/*Encabezado*/
+
+header {
+    width: 100%;
+    height: 550px;
+    background-image: url('../img/fondo-header.jpg');
+    background-size: 100% 100%;
+}
+
+
+/* Portafolio */
+
+main#portafolio {
+    width: 100%;
+    height: 550px;
+    background: rgb(255, 255, 255, 0.8);
+}
+
+.div-porta {
+    width: 33.33%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    padding: 50px;
+    font-size: 13px;
+}
+
+.div-porta img {
+    width: 150px;
+    height: 150px;
+    margin: 40px 0px 0px 0px;
+    border-radius: 50%;
+}
+
+.div-porta p {
+    margin: 40px 0px 0px 0px;
+    text-align: justify;
+}
+
+
+/*Quienes-somos*/
+
+section#quienes-somos {
+    width: 100%;
+    height: 550px;
+    font-size: 13px;
+}
+
+.fila {
+    width: 100%;
+    height: 33.33%;
+    background: rgb(255, 255, 255, 0.8);
+}
+
+.col-ext {
+    width: 40%;
+    height: 100%;
+    float: left;
+    text-align: justify;
+    padding: 30px;
+}
+
+.col-ext h1 {
+    text-align: center;
+    padding: 50px;
+}
+
+.col-cen img {
+    width: 150px;
+    height: 150px;
+    border-radius: 25%;
+}
+
+.col-cen {
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.col-cen img {
+    margin: 15px 0px;
+}
+
+
+/*contactenos*/
+
+section#contactenos {
+    width: 100%;
+    height: 550px;
+}
+
+.div-contacto {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.div-arr {
+    width: 100%;
+    height: 70%;
+}
+
+.div-arr iframe {
+    width: 100%;
+    height: 100%;
+    /* padding: 30px; Para el video */
+    border: 0;
+}
+
+.div-aba {
+    width: 100%;
+    height: 30%;
+    padding: 2px;
+    background: rgba(255, 255, 255, 0.7);
+    text-align: center;
+}
+
+
+/*Dirección contacto*/
+
+.direccion {
+    margin-top: 10px;
+}
+
+
+/*Redes sociales*/
+
+.facebook {
+    width: 40px;
+    height: 40px;
+    padding: 2px;
+    margin-top: 10px;
+}
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7);
+}
